@@ -5,6 +5,7 @@ import 'package:layouts_app/screen2-images.dart';
 import 'package:layouts_app/screen3-icons.dart';
 import 'package:layouts_app/screen4-card.dart';
 import 'package:layouts_app/screen5-container.dart';
+import 'package:layouts_app/screen6-gridview.dart';
 
 class Screen0Navega extends StatelessWidget {
   @override
@@ -62,6 +63,15 @@ class Screen0Navega extends StatelessWidget {
                     context,
                     MaterialPageRoute(
                         builder: (context) => Screen5Container()));
+              },
+            ),
+            RaisedButton(
+              color: Colors.teal[300],
+              child: Text('Ir a Screen 6 GridView',
+                  style: TextStyle(color: Colors.white)),
+              onPressed: () {
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Screen6GridView()));
               },
             )
           ],
