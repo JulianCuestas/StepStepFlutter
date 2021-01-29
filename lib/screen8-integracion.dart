@@ -72,16 +72,15 @@ class Screen8Integracion extends StatelessWidget {
       ),
       body: ListView(
         children: [
-            Image.network(
-                'https://images.vexels.com/media/users/3/159974/raw/cd7906e49b3dd10d640f874f079ac1b6-ilustracion-de-vikingo-y-cuervo.png',
-                width: 600,
-                height: 240,
-                fit: BoxFit.cover),
-            titleSection,
-            buttonSection,
-            textSection,
-          ],
-        ),
+          Image.network(
+              'https://images.vexels.com/media/users/3/159974/raw/cd7906e49b3dd10d640f874f079ac1b6-ilustracion-de-vikingo-y-cuervo.png',
+              width: 600,
+              height: 240,
+              fit: BoxFit.cover),
+          titleSection,
+          buttonSection,
+          textSection,
+        ],
       ),
     );
   }
