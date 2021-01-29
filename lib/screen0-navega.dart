@@ -7,6 +7,7 @@ import 'package:layouts_app/screen4-card.dart';
 import 'package:layouts_app/screen5-container.dart';
 import 'package:layouts_app/screen6-gridview.dart';
 import 'package:layouts_app/screen7-stack.dart';
+import 'package:layouts_app/screen8-integracion.dart';
 
 class Screen0Navega extends StatelessWidget {
   @override
@@ -82,6 +83,17 @@ class Screen0Navega extends StatelessWidget {
               onPressed: () {
                 Navigator.push(context,
                     MaterialPageRoute(builder: (context) => Screen7Stack()));
+              },
+            ),
+            RaisedButton(
+              color: Colors.amber[900],
+              child: Text('Ir a Screen 8 Integración',
+                  style: TextStyle(color: Colors.black)),
+              onPressed: () {
+                Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                        builder: (context) => Screen8Integracion()));
               },
             )
           ],
