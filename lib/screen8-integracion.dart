@@ -70,9 +70,8 @@ class Screen8Integracion extends StatelessWidget {
         backgroundColor: Colors.amber[900],
         title: Text('Screen 8 Integración'),
       ),
-      body: SingleChildScrollView(
-        child: Column(
-          children: [
+      body: ListView(
+        children: [
             Image.network(
                 'https://images.vexels.com/media/users/3/159974/raw/cd7906e49b3dd10d640f874f079ac1b6-ilustracion-de-vikingo-y-cuervo.png',
                 width: 600,
